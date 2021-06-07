@@ -15,5 +15,6 @@ public class Lab3Ex3 {
 
 	public static void main(String[] args) {
 		isVowel("MAVA");
+		
 	}
 }
