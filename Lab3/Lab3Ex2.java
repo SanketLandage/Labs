@@ -15,5 +15,6 @@ public class Lab3Ex2 {
 		String str = sc.next();
 		Lab3Ex2 lb = new Lab3Ex2();
 		lb.getImage(str);
+		
 	}
 }
