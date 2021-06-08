@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Lab1Ex1 {
 	public static void main(String[] args) {
 
-		//// Accept User Input in variable num
+		// Accept User Input in variable num
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please Enter an interger - ");
 		int num = sc.nextInt();
