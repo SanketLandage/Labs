@@ -2,26 +2,26 @@ package com.cg.Lab5;
 
 import java.util.Scanner;
 
-class MyException2 extends Exception{
+class MyException2 extends Exception {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	MyException2(String s){
+	MyException2(String s) {
 		super(s);
 	}
 }
 
 public class Lab5Ex2 {
-	public static void validate(String s1 , String s2) throws  MyException2 {
-		if(s1.length()==0 || s2.length()== 0) {
+	public static void validate(String s1, String s2) throws MyException2 {
+		if (s1.length() == 0 || s2.length() == 0) {
 			throw new MyException2(" You must enter First name and Last Name.!");
-		}
-		else {
+		} else {
 			System.out.println(" You are Welcome...!!");
 		}
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter First Name : - ");
@@ -30,10 +30,12 @@ public class Lab5Ex2 {
 		String lName = sc.next();
 		sc.close();
 		try {
-			validate(fName,lName);
-		}
-		catch(MyException2 me){
+			validate(fName, lName);
+		} catch (MyException2 me) {
 			System.out.println("Exception Occured " + me.getMessage());
+		}
+		for (int i = 0; i < 10; i++) {
+			System.out.println();
 		}
 	}
 }
